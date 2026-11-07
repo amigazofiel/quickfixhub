@@ -3,7 +3,7 @@ export const SITE_CONFIG = {
   tagline: "60-Second Fixes for Windows, Mac, iOS, Android & Everyday Apps",
   description:
     "Direct, zero-fluff troubleshooting guides for Windows 11/10, macOS, iPhone, Android, and popular software. Copy-paste commands, instant quick-fix summaries, and verified step-by-step solutions.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://quickfixhub.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://thequickfixhub.vercel.app",
   locale: "en_US",
   author: "QuickFixHub Engineering Team",
   categories: [

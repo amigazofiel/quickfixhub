@@ -28,7 +28,7 @@ export default function ContactPage() {
               For guide corrections, press inquiries, or partnership questions:
             </p>
             <span className="font-mono text-sm text-cyan-300">
-              support@quickfixhub.vercel.app
+              support@thequickfixhub.vercel.app
             </span>
           </div>
 
