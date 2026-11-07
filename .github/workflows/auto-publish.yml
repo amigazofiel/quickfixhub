@@ -1,0 +1,42 @@
+name: "Autopilot SEO Article Publisher (Gemini 2.5 Flash)"
+
+on:
+  # Se ejecuta automáticamente 2 veces al día (13:00 UTC y 21:00 UTC - horario ideal para EE. UU.)
+  schedule:
+    - cron: "0 13,21 * * *"
+  # Permite ejecutarlo manualmente con 1 clic desde la pestaña Actions en GitHub
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Generate New SEO Troubleshooting Article via Gemini 2.5 Flash
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/generate-article.mjs
+
+      - name: Commit and Push New Article to Main Branch
+        run: |
+          git config user.name "QuickFixHub Autopilot Bot"
+          git config user.email "actions@github.com"
+          git add content/articles/*.md content/topics-queue.json
+          if git diff --staged --quiet; then
+            echo "No new articles to commit."
+          else
+            git commit -m "chore(content): auto-publish new US troubleshooting guide"
+            git push origin HEAD:main
+          fi

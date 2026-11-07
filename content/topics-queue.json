@@ -1,0 +1,194 @@
+[
+  {
+    "slug": "fix-err-connection-timed-out-chrome-windows-11",
+    "topic": "How to Fix ERR_CONNECTION_TIMED_OUT in Google Chrome on Windows 11 & Mac",
+    "category": "Windows",
+    "errorCode": "ERR_CONNECTION_TIMED_OUT",
+    "osVersion": "Windows 11/10 & macOS",
+    "published": false
+  },
+  {
+    "slug": "fix-windows-11-bluetooth-missing-or-not-turning-on",
+    "topic": "How to Fix Bluetooth Missing or Not Turning On in Windows 11",
+    "category": "Windows",
+    "errorCode": "Code 43 / Bluetooth Toggle Missing",
+    "osVersion": "Windows 11 (23H2/24H2)",
+    "published": false
+  },
+  {
+    "slug": "fix-macos-spotlight-search-not-working-rebuild-index",
+    "topic": "How to Fix Mac Spotlight Search Not Finding Files (Rebuild mdutil Index)",
+    "category": "macOS",
+    "errorCode": "Spotlight Index Corrupted",
+    "osVersion": "macOS Sequoia & Sonoma",
+    "published": false
+  },
+  {
+    "slug": "fix-iphone-face-id-not-working-after-ios-update",
+    "topic": "How to Fix Face ID Not Working or 'Move iPhone Lower' Loop on iOS 18",
+    "category": "iOS",
+    "errorCode": "Face ID Is Not Available",
+    "osVersion": "iOS 18 & iOS 17",
+    "published": false
+  },
+  {
+    "slug": "fix-android-moisture-detected-in-charging-port-false-error",
+    "topic": "How to Clear False 'Moisture Detected in Charging Port' Warning on Samsung & Android",
+    "category": "Android",
+    "errorCode": "Unplug Charger / Moisture Detected",
+    "osVersion": "Samsung One UI & Android 14/15",
+    "published": false
+  },
+  {
+    "slug": "fix-chrome-status-access-violation-error-code",
+    "topic": "How to Fix 'Aw, Snap! STATUS_ACCESS_VIOLATION' in Chrome & Edge",
+    "category": "Apps & Software",
+    "errorCode": "STATUS_ACCESS_VIOLATION",
+    "osVersion": "Windows 11/10 & macOS",
+    "published": false
+  },
+  {
+    "slug": "fix-windows-11-system-thread-exception-not-handled-bsod",
+    "topic": "How to Fix SYSTEM_THREAD_EXCEPTION_NOT_HANDLED Blue Screen (BSOD) on Windows 11",
+    "category": "Windows",
+    "errorCode": "SYSTEM_THREAD_EXCEPTION_NOT_HANDLED",
+    "osVersion": "Windows 11 & Windows 10",
+    "published": false
+  },
+  {
+    "slug": "fix-mac-wifi-connected-but-no-internet-sequoia",
+    "topic": "How to Fix MacBook Wi-Fi Connected But No Internet on macOS Sequoia & Sonoma",
+    "category": "macOS",
+    "errorCode": "Self-Assigned IP / DNS Timeout",
+    "osVersion": "macOS Sequoia 15 & Sonoma 14",
+    "published": false
+  },
+  {
+    "slug": "fix-apple-carplay-not-connecting-iphone-ios-18",
+    "topic": "How to Fix Apple CarPlay Not Connecting After iOS 18 Update (Wired & Wireless)",
+    "category": "iOS",
+    "errorCode": "CarPlay Connection Failed",
+    "osVersion": "iOS 18 & iOS 17",
+    "published": false
+  },
+  {
+    "slug": "fix-google-play-store-pending-download-stuck-android",
+    "topic": "How to Fix Google Play Store Stuck on 'Pending' When Downloading Apps",
+    "category": "Android",
+    "errorCode": "Download Pending Loop",
+    "osVersion": "Android 15, 14 & 13",
+    "published": false
+  },
+  {
+    "slug": "fix-outlook-cannot-start-microsoft-outlook-cannot-open-window",
+    "topic": "How to Fix 'Cannot Start Microsoft Outlook. Cannot Open the Outlook Window'",
+    "category": "Apps & Software",
+    "errorCode": "Invalid XML / Navigation Pane Reset",
+    "osVersion": "Windows 11 & Windows 10 (Microsoft 365)",
+    "published": false
+  },
+  {
+    "slug": "fix-windows-11-wifi-option-disappeared-network-adapter",
+    "topic": "How to Fix Wi-Fi Icon & Option Completely Missing in Windows 11",
+    "category": "Windows",
+    "errorCode": "WLAN AutoConfig / Code 10",
+    "osVersion": "Windows 11 & Windows 10",
+    "published": false
+  },
+  {
+    "slug": "fix-macos-external-hard-drive-not-showing-up-disk-utility",
+    "topic": "How to Fix External Hard Drive or SSD Not Showing Up on Mac",
+    "category": "macOS",
+    "errorCode": "com.apple.DiskManagement.disenter",
+    "osVersion": "macOS Sequoia, Sonoma & Ventura",
+    "published": false
+  },
+  {
+    "slug": "fix-imessage-waiting-for-activation-error-iphone",
+    "topic": "How to Fix iMessage & FaceTime 'Waiting for Activation' Error on iPhone",
+    "category": "iOS",
+    "errorCode": "Activation Unsuccessful",
+    "osVersion": "iOS 18 & iOS 17",
+    "published": false
+  },
+  {
+    "slug": "fix-android-bluetooth-keeps-stopping-or-disconnecting",
+    "topic": "How to Fix Bluetooth Keeps Disconnecting or Stopping on Android",
+    "category": "Android",
+    "errorCode": "Bluetooth Keeps Stopping",
+    "osVersion": "Android 14 & Android 15",
+    "published": false
+  },
+  {
+    "slug": "fix-spotify-cant-play-current-track-desktop-error",
+    "topic": "How to Fix Spotify 'Can't Play the Current Track' on Windows & Mac",
+    "category": "Apps & Software",
+    "errorCode": "Spotify Error Code 4 / Audio Output",
+    "osVersion": "Windows 11/10 & macOS",
+    "published": false
+  },
+  {
+    "slug": "fix-windows-11-high-ram-memory-usage-sysmain-ntoskrnl",
+    "topic": "How to Fix High RAM & Memory Usage (80%+) on Idle in Windows 11",
+    "category": "Windows",
+    "errorCode": "SysMain / Non-Paged Pool Leak",
+    "osVersion": "Windows 11 & Windows 10",
+    "published": false
+  },
+  {
+    "slug": "fix-mac-bluetooth-audio-stuttering-airpods-terminal",
+    "topic": "How to Fix AirPods & Bluetooth Audio Stuttering or Cutting Out on Mac",
+    "category": "macOS",
+    "errorCode": "bluetoothd Audio Drop",
+    "osVersion": "macOS Sonoma & Sequoia",
+    "published": false
+  },
+  {
+    "slug": "fix-iphone-storage-almost-full-system-data-bug",
+    "topic": "How to Clear Huge 'System Data' Taking Up iPhone Storage on iOS 18",
+    "category": "iOS",
+    "errorCode": "iPhone Storage Full (System Data)",
+    "osVersion": "iOS 18 & iOS 17",
+    "published": false
+  },
+  {
+    "slug": "fix-zoom-microphone-not-working-windows-11-mac",
+    "topic": "How to Fix Zoom Microphone Not Working or 'Cannot Detect Mic' on Windows & Mac",
+    "category": "Apps & Software",
+    "errorCode": "Zoom Audio Input Blocked",
+    "osVersion": "Windows 11/10 & macOS",
+    "published": false
+  },
+  {
+    "slug": "fix-vcruntime140-dll-was-not-found-windows-11",
+    "topic": "How to Fix 'VCRUNTIME140.dll Was Not Found' or 'MSVCP140.dll Missing' on Windows 11",
+    "category": "Windows",
+    "errorCode": "VCRUNTIME140.dll / MSVCP140.dll",
+    "osVersion": "Windows 11 & Windows 10 (64-bit)",
+    "published": false
+  },
+  {
+    "slug": "fix-err-ssl-protocol-error-chrome-windows-mac",
+    "topic": "How to Fix ERR_SSL_PROTOCOL_ERROR in Google Chrome (Windows & Mac)",
+    "category": "Apps & Software",
+    "errorCode": "ERR_SSL_PROTOCOL_ERROR",
+    "osVersion": "Windows 11/10, macOS & Android",
+    "published": false
+  },
+  {
+    "slug": "fix-windows-11-no-audio-output-device-is-installed",
+    "topic": "How to Fix 'No Audio Output Device Is Installed' on Windows 11",
+    "category": "Windows",
+    "errorCode": "No Audio Output Device Installed",
+    "osVersion": "Windows 11 & Windows 10",
+    "published": false
+  },
+  {
+    "slug": "fix-macos-homebrew-command-not-found-brew-apple-silicon",
+    "topic": "How to Fix 'zsh: command not found: brew' on M1/M2/M3/M4 Mac",
+    "category": "macOS",
+    "errorCode": "zsh: command not found: brew",
+    "osVersion": "macOS Apple Silicon (M1/M2/M3/M4)",
+    "published": false
+  }
+]
