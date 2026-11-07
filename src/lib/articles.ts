@@ -164,7 +164,7 @@ export function getArticleBySlug(slug: string): Article | null {
     };
 
     const faqs: FaqItem[] = Array.isArray(data.faqs)
-      ? data.faqs.filter((f: any) => f && f.question && f.answer)
+      ? data.faqs.filter((f: FaqItem) => f && f.question && f.answer)
       : [];
 
     return {
