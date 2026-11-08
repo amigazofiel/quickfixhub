@@ -5,7 +5,8 @@
     "category": "Windows",
     "errorCode": "ERR_CONNECTION_TIMED_OUT",
     "osVersion": "Windows 11/10 & macOS",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-08"
   },
   {
     "slug": "fix-windows-11-bluetooth-missing-or-not-turning-on",
