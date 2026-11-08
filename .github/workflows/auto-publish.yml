@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   generate-and-publish:
@@ -27,6 +28,8 @@ jobs:
       - name: Generate New SEO Troubleshooting Article via Gemini 2.5 Flash
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: node scripts/generate-article.mjs
 
       - name: Commit and Push New Article to Main Branch

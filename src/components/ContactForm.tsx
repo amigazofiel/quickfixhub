@@ -13,16 +13,23 @@ export default function ContactForm() {
     description: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.errorCode.trim() && !formData.description.trim()) return;
 
     setLoading(true);
-    // Simulate brief network submission
-    setTimeout(() => {
+    try {
+      await fetch("/api/report-error", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+    } catch (err) {
+      console.error("Failed to submit error report:", err);
+    } finally {
       setLoading(false);
       setSubmitted(true);
-    }, 600);
+    }
   };
 
   if (submitted) {
