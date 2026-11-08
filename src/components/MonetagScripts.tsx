@@ -3,10 +3,11 @@
 import Script from "next/script";
 
 export default function MonetagScripts() {
-  const multiTagZoneId = process.env.NEXT_PUBLIC_MONETAG_MULTITAG_ZONE_ID;
+  const multiTagZoneId =
+    process.env.NEXT_PUBLIC_MONETAG_MULTITAG_ZONE_ID || "307642";
   const multiTagSrc =
     process.env.NEXT_PUBLIC_MONETAG_MULTITAG_SRC ||
-    "https://alwingulla.com/88/tag.min.js";
+    "https://quge5.com/88/tag.min.js";
 
   const inPagePushZoneId = process.env.NEXT_PUBLIC_MONETAG_INPAGE_PUSH_ZONE_ID;
   const vignetteZoneId = process.env.NEXT_PUBLIC_MONETAG_VIGNETTE_ZONE_ID;

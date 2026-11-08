@@ -70,6 +70,12 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <head>
         <meta name="monetag" content="1b8f3f07a6d86969dd5b3aaf21596515" />
+        <script
+          src="https://quge5.com/88/tag.min.js"
+          data-zone="307642"
+          async
+          data-cfasync="false"
+        />
       </head>
       <body className="min-h-screen flex flex-col bg-[#060911] text-slate-100 antialiased selection:bg-cyan-500/30 selection:text-cyan-100 relative">
         {/* Accessible Dark Dynamic Ambient Gradients */}
