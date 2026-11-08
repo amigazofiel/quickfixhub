@@ -5,7 +5,8 @@ import Footer from "@/components/Footer";
 import MonetagScripts from "@/components/MonetagScripts";
 import { SITE_CONFIG } from "@/lib/site-config";
 
-const monetagVerification = process.env.NEXT_PUBLIC_MONETAG_VERIFICATION;
+const monetagVerification =
+  process.env.NEXT_PUBLIC_MONETAG_VERIFICATION || "1b8f3f07a6d86969dd5b3aaf21596515";
 const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 
 export const metadata: Metadata = {
@@ -67,6 +68,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <head>
+        <meta name="monetag" content="1b8f3f07a6d86969dd5b3aaf21596515" />
+      </head>
       <body className="min-h-screen flex flex-col bg-[#060911] text-slate-100 antialiased selection:bg-cyan-500/30 selection:text-cyan-100 relative">
         {/* Accessible Dark Dynamic Ambient Gradients */}
         <div
