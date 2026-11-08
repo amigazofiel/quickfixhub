@@ -76,10 +76,10 @@ export default function RootLayout({
           async
           data-cfasync="false"
         />
-        {/* Google Analytics / Google Tag Manager */}
+        {/* Google Analytics 4 (GA4) */}
         <script
           async
-          src="https://www.googletagmanager.com/gtm.js?id=GTM-MD2LTMQN"
+          src="https://www.googletagmanager.com/gtag/js?id=G-TZW6MXYDR6"
         />
         <script
           dangerouslySetInnerHTML={{
@@ -87,20 +87,12 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
+              gtag('config', 'G-TZW6MXYDR6');
             `,
           }}
         />
       </head>
       <body className="min-h-screen flex flex-col bg-[#060911] text-slate-100 antialiased selection:bg-cyan-500/30 selection:text-cyan-100 relative">
-        {/* Google Tag Manager (noscript fallback) */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-MD2LTMQN"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
         {/* Accessible Dark Dynamic Ambient Gradients */}
         <div
           aria-hidden="true"
