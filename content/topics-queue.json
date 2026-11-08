@@ -14,7 +14,8 @@
     "category": "Windows",
     "errorCode": "Code 43 / Bluetooth Toggle Missing",
     "osVersion": "Windows 11 (23H2/24H2)",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-08"
   },
   {
     "slug": "fix-macos-spotlight-search-not-working-rebuild-index",
