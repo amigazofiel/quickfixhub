@@ -81,11 +81,6 @@ export default function Footer() {
                   Contact & Report an Error
                 </Link>
               </li>
-              <li>
-                <Link href="/sitemap.xml" className="hover:text-cyan-300 transition">
-                  XML Sitemap
-                </Link>
-              </li>
             </ul>
           </div>
         </div>
