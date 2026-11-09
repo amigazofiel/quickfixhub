@@ -32,7 +32,8 @@
     "category": "iOS",
     "errorCode": "Face ID Is Not Available",
     "osVersion": "iOS 18 & iOS 17",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-09"
   },
   {
     "slug": "fix-android-moisture-detected-in-charging-port-false-error",
