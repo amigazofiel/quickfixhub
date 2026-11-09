@@ -23,7 +23,8 @@
     "category": "macOS",
     "errorCode": "Spotlight Index Corrupted",
     "osVersion": "macOS Sequoia & Sonoma",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-09"
   },
   {
     "slug": "fix-iphone-face-id-not-working-after-ios-update",
