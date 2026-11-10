@@ -41,7 +41,8 @@
     "category": "Android",
     "errorCode": "Unplug Charger / Moisture Detected",
     "osVersion": "Samsung One UI & Android 14/15",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-10"
   },
   {
     "slug": "fix-chrome-status-access-violation-error-code",
