@@ -50,7 +50,8 @@
     "category": "Apps & Software",
     "errorCode": "STATUS_ACCESS_VIOLATION",
     "osVersion": "Windows 11/10 & macOS",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-11"
   },
   {
     "slug": "fix-windows-11-system-thread-exception-not-handled-bsod",
