@@ -18,7 +18,11 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY || "amigazofiel/quickfixhub";
 const MATURATION_HOURS = parseInt(process.env.USER_REQUEST_MATURATION_HOURS || "72", 10);
-const MODEL_NAME = "gemini-2.5-flash";
+const CANDIDATE_MODELS = [
+  process.env.GEMINI_MODEL || "gemini-2.5-flash",
+  "gemini-2.0-flash",
+  "gemini-1.5-flash",
+];
 const ARTICLES_DIR = path.join(process.cwd(), "content", "articles");
 const QUEUE_PATH = path.join(process.cwd(), "content", "topics-queue.json");
 
@@ -27,6 +31,74 @@ if (!GEMINI_API_KEY) {
     "❌ ERROR: GEMINI_API_KEY environment variable is missing. Add it in GitHub -> Settings -> Secrets and variables -> Actions."
   );
   process.exit(1);
+}
+
+function cleanJsonText(raw) {
+  let str = (raw || "").trim();
+  if (str.startsWith("```json")) {
+    str = str.replace(/^```json\s*/i, "").replace(/\s*```$/, "");
+  } else if (str.startsWith("```")) {
+    str = str.replace(/^```\s*/, "").replace(/\s*```$/, "");
+  }
+  return str.trim();
+}
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+async function callGeminiJsonWithRetry(prompt, maxRetries = 3) {
+  let lastError = null;
+
+  for (const model of CANDIDATE_MODELS) {
+    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`;
+
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+      try {
+        console.log(`🤖 Invoking ${model} (attempt ${attempt}/${maxRetries})...`);
+        const response = await fetch(endpoint, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }],
+            generationConfig: {
+              temperature: 0.4,
+              responseMimeType: "application/json",
+            },
+          }),
+        });
+
+        if (!response.ok) {
+          const errText = await response.text();
+          console.warn(`⚠️ ${model} responded with HTTP ${response.status}: ${errText.slice(0, 180)}`);
+          if (response.status === 429 || response.status >= 500) {
+            // Temporary rate limit or server overload -> wait and retry
+            const waitMs = attempt * 4000;
+            console.log(`⏳ Waiting ${waitMs / 1000}s before retry...`);
+            await sleep(waitMs);
+            continue;
+          }
+          throw new Error(`Gemini API Error (${response.status}): ${errText}`);
+        }
+
+        const data = await response.json();
+        const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+        if (!rawText) {
+          throw new Error("Gemini returned an empty response body.");
+        }
+
+        const cleaned = cleanJsonText(rawText);
+        return JSON.parse(cleaned);
+      } catch (err) {
+        lastError = err;
+        console.warn(`⚠️ Error on ${model} (attempt ${attempt}): ${err.message}`);
+        if (attempt < maxRetries) {
+          await sleep(attempt * 3000);
+        }
+      }
+    }
+    console.log(`Switching from ${model} to next candidate model...`);
+  }
+
+  throw lastError || new Error("Failed to generate content after all model retries.");
 }
 
 function slugify(str) {
@@ -61,33 +133,8 @@ function getExistingSlugs() {
   );
 }
 
-async function callGeminiJson(prompt) {
-  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${GEMINI_API_KEY}`;
-
-  const response = await fetch(endpoint, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: {
-        temperature: 0.4,
-        responseMimeType: "application/json",
-      },
-    }),
-  });
-
-  if (!response.ok) {
-    const errText = await response.text();
-    throw new Error(`Gemini API Error (${response.status}): ${errText}`);
-  }
-
-  const data = await response.json();
-  const rawText = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-  if (!rawText) {
-    throw new Error("Gemini returned an empty response.");
-  }
-
-  return JSON.parse(rawText);
+function callGeminiJson(prompt) {
+  return callGeminiJsonWithRetry(prompt);
 }
 
 /**
