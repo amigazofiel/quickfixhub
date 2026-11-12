@@ -68,7 +68,8 @@
     "category": "macOS",
     "errorCode": "Self-Assigned IP / DNS Timeout",
     "osVersion": "macOS Sequoia 15 & Sonoma 14",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-12"
   },
   {
     "slug": "fix-apple-carplay-not-connecting-iphone-ios-18",
