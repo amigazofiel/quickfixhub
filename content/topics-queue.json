@@ -59,7 +59,8 @@
     "category": "Windows",
     "errorCode": "SYSTEM_THREAD_EXCEPTION_NOT_HANDLED",
     "osVersion": "Windows 11 & Windows 10",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-12"
   },
   {
     "slug": "fix-mac-wifi-connected-but-no-internet-sequoia",
