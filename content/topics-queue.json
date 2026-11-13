@@ -77,7 +77,8 @@
     "category": "iOS",
     "errorCode": "CarPlay Connection Failed",
     "osVersion": "iOS 18 & iOS 17",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-13"
   },
   {
     "slug": "fix-google-play-store-pending-download-stuck-android",
