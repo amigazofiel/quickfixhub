@@ -86,7 +86,8 @@
     "category": "Android",
     "errorCode": "Download Pending Loop",
     "osVersion": "Android 15, 14 & 13",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-13"
   },
   {
     "slug": "fix-outlook-cannot-start-microsoft-outlook-cannot-open-window",
