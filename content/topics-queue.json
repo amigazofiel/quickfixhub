@@ -104,7 +104,8 @@
     "category": "Windows",
     "errorCode": "WLAN AutoConfig / Code 10",
     "osVersion": "Windows 11 & Windows 10",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-14"
   },
   {
     "slug": "fix-macos-external-hard-drive-not-showing-up-disk-utility",
