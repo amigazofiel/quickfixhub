@@ -95,7 +95,8 @@
     "category": "Apps & Software",
     "errorCode": "Invalid XML / Navigation Pane Reset",
     "osVersion": "Windows 11 & Windows 10 (Microsoft 365)",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-14"
   },
   {
     "slug": "fix-windows-11-wifi-option-disappeared-network-adapter",
