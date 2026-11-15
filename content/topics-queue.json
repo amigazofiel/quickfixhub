@@ -113,7 +113,8 @@
     "category": "macOS",
     "errorCode": "com.apple.DiskManagement.disenter",
     "osVersion": "macOS Sequoia, Sonoma & Ventura",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-15"
   },
   {
     "slug": "fix-imessage-waiting-for-activation-error-iphone",
