@@ -122,7 +122,8 @@
     "category": "iOS",
     "errorCode": "Activation Unsuccessful",
     "osVersion": "iOS 18 & iOS 17",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-15"
   },
   {
     "slug": "fix-android-bluetooth-keeps-stopping-or-disconnecting",
