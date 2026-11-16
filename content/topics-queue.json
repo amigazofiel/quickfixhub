@@ -140,7 +140,8 @@
     "category": "Apps & Software",
     "errorCode": "Spotify Error Code 4 / Audio Output",
     "osVersion": "Windows 11/10 & macOS",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-16"
   },
   {
     "slug": "fix-windows-11-high-ram-memory-usage-sysmain-ntoskrnl",
