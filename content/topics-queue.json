@@ -131,7 +131,8 @@
     "category": "Android",
     "errorCode": "Bluetooth Keeps Stopping",
     "osVersion": "Android 14 & Android 15",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-16"
   },
   {
     "slug": "fix-spotify-cant-play-current-track-desktop-error",
