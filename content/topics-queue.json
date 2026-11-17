@@ -149,7 +149,8 @@
     "category": "Windows",
     "errorCode": "SysMain / Non-Paged Pool Leak",
     "osVersion": "Windows 11 & Windows 10",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-17"
   },
   {
     "slug": "fix-mac-bluetooth-audio-stuttering-airpods-terminal",
