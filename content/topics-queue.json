@@ -158,7 +158,8 @@
     "category": "macOS",
     "errorCode": "bluetoothd Audio Drop",
     "osVersion": "macOS Sonoma & Sequoia",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-18"
   },
   {
     "slug": "fix-iphone-storage-almost-full-system-data-bug",
