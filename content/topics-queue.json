@@ -167,7 +167,8 @@
     "category": "iOS",
     "errorCode": "iPhone Storage Full (System Data)",
     "osVersion": "iOS 18 & iOS 17",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-19"
   },
   {
     "slug": "fix-zoom-microphone-not-working-windows-11-mac",
