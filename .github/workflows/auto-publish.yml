@@ -1,9 +1,9 @@
 name: "Autopilot SEO Article Publisher (Gemini 2.5 Flash)"
 
 on:
-  # Se ejecuta automáticamente 2 veces al día (13:00 UTC y 21:00 UTC - horario ideal para EE. UU.)
+  # Se ejecuta automáticamente 2 veces al día (13:23 UTC y 21:23 UTC - minuto impar para evitar saturación en GitHub)
   schedule:
-    - cron: "0 13,21 * * *"
+    - cron: "23 13,21 * * *"
   # Permite ejecutarlo manualmente con 1 clic desde la pestaña Actions en GitHub
   workflow_dispatch:
 
@@ -44,3 +44,8 @@ jobs:
             git pull --rebase origin main || true
             git push origin HEAD:main
           fi
+
+      - name: Notify Bing, DuckDuckGo & Yahoo via IndexNow
+        run: |
+          sleep 60
+          node scripts/ping-indexnow.mjs

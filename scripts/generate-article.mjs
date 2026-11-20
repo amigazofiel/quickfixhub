@@ -253,20 +253,24 @@ async function pickOrGenerateTopic(existingSlugs) {
     return { topicItem: nextItem, queue, isUserRequest: false };
   }
 
-  // 3. Third priority: Infinite AI generation
-  console.log("Queue exhausted! Asking Gemini 2.5 Flash for a fresh US Tech Troubleshooting topic...");
-  const existingList = Array.from(existingSlugs).slice(-40).join(", ");
-  const topicPrompt = `You are a Principal SEO Strategist for a US tech troubleshooting website ("QuickFixHub").
-Suggest ONE high-search-volume, specific everyday software or OS error topic in US English that users frequently search on Google (Windows 11, macOS, iOS, Android, or popular apps like Chrome, Discord, Steam, Outlook, Zoom, Wi-Fi).
-Do NOT repeat any of these existing slugs: ${existingList}
+  // 3. Third priority: Infinite AI generation (Exact Error Code Sniper Mode)
+  console.log("Queue exhausted! Asking Gemini for a low-competition EXACT error code topic...");
+  const existingList = Array.from(existingSlugs).slice(-60).join(", ");
+  const topicPrompt = `You are a Principal SEO Strategist specializing in ULTRA-LOW-COMPETITION, EXACT-MATCH error code ranking for a new US tech troubleshooting site ("QuickFixHub").
+
+CRITICAL SEO RULE:
+- NEVER suggest broad, high-competition generic topics (like "Wi-Fi not working", "iPhone battery draining", "Windows 11 slow", "Bluetooth disconnected", "High RAM usage"). Big domains (Microsoft, Apple, Reddit) own those.
+- MUST suggest ONE hyper-specific, EXACT alphanumeric/hexadecimal error code or verbatim system error message that users literally copy-paste into Google/Bing in the US (e.g., Windows Update 0x80070643, 0x800f0922, OneDrive 0x8004de40, Windows Service Error 1067, SMB Error 0x80070035, macOS com.apple.DiskManagement.disenter error 49244, Chrome ERR_QUIC_PROTOCOL_ERROR, Outlook 0x8004010F, Event ID 10016 DistributedCOM, WSL 0x80370102, Steam Error Code e502 l3, Printer Error 0x0000011b).
+- The slug and title MUST contain the exact error code!
+- Do NOT repeat any of these existing slugs: ${existingList}
 
 Return ONLY a JSON object with this exact shape:
 {
-  "slug": "fix-example-error-windows-11",
-  "topic": "How to Fix [Specific Error] on [Platform]",
+  "slug": "fix-exact-error-code-platform",
+  "topic": "How to Fix Error [EXACT_ERROR_CODE] ([Short Context]) on [Platform]",
   "category": "Windows" | "macOS" | "iOS" | "Android" | "Apps & Software",
-  "errorCode": "Exact Error Code or Short Error Name",
-  "osVersion": "e.g., Windows 11/10 or iOS 18"
+  "errorCode": "EXACT_ERROR_CODE",
+  "osVersion": "e.g., Windows 11 (24H2/23H2) or macOS Sequoia"
 }`;
 
   const generatedTopic = await callGeminiJson(topicPrompt);

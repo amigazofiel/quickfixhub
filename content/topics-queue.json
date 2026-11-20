@@ -171,6 +171,126 @@
     "publishedAt": "2026-11-19"
   },
   {
+    "slug": "fix-windows-11-update-error-0x80070643-winre",
+    "topic": "How to Fix Windows Update Error 0x80070643 (WinRE Partition Too Small)",
+    "category": "Windows",
+    "errorCode": "0x80070643",
+    "osVersion": "Windows 11 & Windows 10",
+    "published": false
+  },
+  {
+    "slug": "fix-onedrive-error-code-0x8004de40-windows-11",
+    "topic": "How to Fix OneDrive Error Code 0x8004de40 (Cannot Connect to Cloud) on Windows 11",
+    "category": "Apps & Software",
+    "errorCode": "0x8004de40",
+    "osVersion": "Windows 11 & Windows 10",
+    "published": false
+  },
+  {
+    "slug": "fix-windows-11-printer-error-0x0000011b-network-sharing",
+    "topic": "How to Fix Windows 11 Network Printer Error 0x0000011b (RpcAuthnLevelPrivacyEnabled)",
+    "category": "Windows",
+    "errorCode": "0x0000011b",
+    "osVersion": "Windows 11 & Windows 10",
+    "published": false
+  },
+  {
+    "slug": "fix-wsl-register-distribution-failed-error-0x80370102",
+    "topic": "How to Fix WSL2 WslRegisterDistribution Failed With Error 0x80370102",
+    "category": "Windows",
+    "errorCode": "0x80370102",
+    "osVersion": "Windows 11 & Windows 10",
+    "published": false
+  },
+  {
+    "slug": "fix-windows-11-smb-network-path-not-found-0x80070035",
+    "topic": "How to Fix Error Code 0x80070035 'The Network Path Was Not Found' on Windows 11",
+    "category": "Windows",
+    "errorCode": "0x80070035",
+    "osVersion": "Windows 11 (24H2/23H2)",
+    "published": false
+  },
+  {
+    "slug": "fix-macos-diskmanagement-disenter-error-49244-mount",
+    "topic": "How to Fix com.apple.DiskManagement.disenter Error 49244 on Mac External Drives",
+    "category": "macOS",
+    "errorCode": "com.apple.DiskManagement.disenter 49244",
+    "osVersion": "macOS Sequoia & Sonoma",
+    "published": false
+  },
+  {
+    "slug": "fix-windows-update-error-0x800f0922-net-framework",
+    "topic": "How to Fix Windows Update Error 0x800f0922 (System Reserved Partition / .NET Fix)",
+    "category": "Windows",
+    "errorCode": "0x800f0922",
+    "osVersion": "Windows 11 & Windows 10",
+    "published": false
+  },
+  {
+    "slug": "fix-outlook-error-0x8004010f-data-file-cannot-be-accessed",
+    "topic": "How to Fix Outlook Error 0x8004010F 'Outlook Data File Cannot Be Accessed'",
+    "category": "Apps & Software",
+    "errorCode": "0x8004010F",
+    "osVersion": "Windows 11/10 (Microsoft 365)",
+    "published": false
+  },
+  {
+    "slug": "fix-chrome-err-quic-protocol-error-windows-mac",
+    "topic": "How to Fix ERR_QUIC_PROTOCOL_ERROR in Google Chrome & Edge",
+    "category": "Apps & Software",
+    "errorCode": "ERR_QUIC_PROTOCOL_ERROR",
+    "osVersion": "Windows 11/10 & macOS",
+    "published": false
+  },
+  {
+    "slug": "fix-windows-11-application-error-0xc0000142-launch",
+    "topic": "How to Fix 'The Application Was Unable to Start Correctly (0xc0000142)' on Windows 11",
+    "category": "Windows",
+    "errorCode": "0xc0000142",
+    "osVersion": "Windows 11 & Windows 10",
+    "published": false
+  },
+  {
+    "slug": "fix-windows-11-usb-error-0x800701b1-device-does-not-exist",
+    "topic": "How to Fix Error 0x800701B1 'A Device Which Does Not Exist Was Specified' on Windows 11",
+    "category": "Windows",
+    "errorCode": "0x800701B1",
+    "osVersion": "Windows 11 & Windows 10",
+    "published": false
+  },
+  {
+    "slug": "fix-windows-store-error-0x80073d02-app-in-use",
+    "topic": "How to Fix Microsoft Store & Xbox App Error 0x80073D02 on Windows 11",
+    "category": "Windows",
+    "errorCode": "0x80073D02",
+    "osVersion": "Windows 11 & Windows 10",
+    "published": false
+  },
+  {
+    "slug": "fix-macos-finder-error-code-36-ds-store-copy",
+    "topic": "How to Fix macOS Finder Error Code -36 ('Some Data Could Not Be Read or Written')",
+    "category": "macOS",
+    "errorCode": "Error Code -36",
+    "osVersion": "macOS Sequoia, Sonoma & Ventura",
+    "published": false
+  },
+  {
+    "slug": "fix-windows-service-error-1067-process-terminated-unexpectedly",
+    "topic": "How to Fix Windows Service Error 1067 'The Process Terminated Unexpectedly'",
+    "category": "Windows",
+    "errorCode": "Error 1067",
+    "osVersion": "Windows 11 & Windows 10",
+    "published": false
+  },
+  {
+    "slug": "fix-windows-11-error-0x80070570-file-corrupted-unreadable",
+    "topic": "How to Fix Error 0x80070570 'The File or Directory Is Corrupted and Unreadable'",
+    "category": "Windows",
+    "errorCode": "0x80070570",
+    "osVersion": "Windows 11 & Windows 10",
+    "published": false
+  },
+  {
     "slug": "fix-zoom-microphone-not-working-windows-11-mac",
     "topic": "How to Fix Zoom Microphone Not Working or 'Cannot Detect Mic' on Windows & Mac",
     "category": "Apps & Software",
