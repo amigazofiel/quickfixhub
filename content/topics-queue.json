@@ -185,7 +185,8 @@
     "category": "Apps & Software",
     "errorCode": "0x8004de40",
     "osVersion": "Windows 11 & Windows 10",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-21"
   },
   {
     "slug": "fix-windows-11-printer-error-0x0000011b-network-sharing",
