@@ -176,7 +176,8 @@
     "category": "Windows",
     "errorCode": "0x80070643",
     "osVersion": "Windows 11 & Windows 10",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-21"
   },
   {
     "slug": "fix-onedrive-error-code-0x8004de40-windows-11",
