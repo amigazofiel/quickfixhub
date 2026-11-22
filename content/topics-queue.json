@@ -203,7 +203,8 @@
     "category": "Windows",
     "errorCode": "0x80370102",
     "osVersion": "Windows 11 & Windows 10",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-22"
   },
   {
     "slug": "fix-windows-11-smb-network-path-not-found-0x80070035",
