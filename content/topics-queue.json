@@ -194,7 +194,8 @@
     "category": "Windows",
     "errorCode": "0x0000011b",
     "osVersion": "Windows 11 & Windows 10",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-22"
   },
   {
     "slug": "fix-wsl-register-distribution-failed-error-0x80370102",
