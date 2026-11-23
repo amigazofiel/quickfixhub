@@ -212,7 +212,8 @@
     "category": "Windows",
     "errorCode": "0x80070035",
     "osVersion": "Windows 11 (24H2/23H2)",
-    "published": false
+    "published": true,
+    "publishedAt": "2026-11-23"
   },
   {
     "slug": "fix-macos-diskmanagement-disenter-error-49244-mount",
