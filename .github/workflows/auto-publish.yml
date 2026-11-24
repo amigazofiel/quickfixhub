@@ -1,10 +1,8 @@
 name: "Autopilot SEO Article Publisher (Gemini 2.5 Flash)"
 
 on:
-  # Se ejecuta automáticamente 2 veces al día (13:23 UTC y 21:23 UTC - minuto impar para evitar saturación en GitHub)
-  schedule:
-    - cron: "23 13,21 * * *"
-  # Permite ejecutarlo manualmente con 1 clic desde la pestaña Actions en GitHub
+  # Autopublicación pausada por solicitud del propietario (para evitar Scaled Content Abuse en dominio nuevo .vercel.app).
+  # Solo se ejecutará manualmente si haces clic en "Run workflow" desde la pestaña Actions en GitHub.
   workflow_dispatch:
 
 permissions:

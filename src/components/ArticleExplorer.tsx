@@ -128,9 +128,9 @@ export default function ArticleExplorer({
               <Link
                 key={article.slug}
                 href={`/fix/${article.slug}`}
-                className="glass-panel-hover rounded-2xl p-6 flex flex-col justify-between group"
+                className="glass-panel-hover rounded-2xl p-6 flex flex-col justify-between group overflow-hidden min-w-0"
               >
-                <div>
+                <div className="min-w-0">
                   <div className="flex items-center justify-between gap-2 mb-3">
                     <span
                       className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-gradient-to-r border ${catMeta.badgeColor}`}
@@ -138,7 +138,7 @@ export default function ArticleExplorer({
                       {article.category}
                     </span>
 
-                    <span className="inline-flex items-center gap-1 text-xs text-slate-300">
+                    <span className="inline-flex items-center gap-1 text-xs text-slate-300 shrink-0">
                       <Clock className="w-3.5 h-3.5 text-cyan-400" />
                       {article.readTime}
                     </span>
@@ -146,14 +146,14 @@ export default function ArticleExplorer({
 
                   {article.errorCode && (
                     <div className="mb-2">
-                      <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-slate-950/90 border border-amber-400/30 font-mono text-[11px] text-amber-300">
-                        <Terminal className="w-3 h-3" />
-                        {article.errorCode}
+                      <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-slate-950/90 border border-amber-400/30 font-mono text-[11px] text-amber-300 max-w-full break-all">
+                        <Terminal className="w-3 h-3 shrink-0" />
+                        <span className="truncate">{article.errorCode}</span>
                       </span>
                     </div>
                   )}
 
-                  <h2 className="text-lg font-bold text-white group-hover:text-cyan-300 transition leading-snug mb-2.5">
+                  <h2 className="text-lg font-bold text-white group-hover:text-cyan-300 transition leading-snug mb-2.5 break-words [overflow-wrap:anywhere]">
                     {article.title}
                   </h2>
 
